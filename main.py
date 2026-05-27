@@ -24,7 +24,6 @@ speed = 0.3
 
 airplane.pos = vector(0, 0, 0)
 speed = 0.25
-print("조종 방법: 키보드 방향키 (↑, ↓, ←, →)")
 
 while True:
     rate(60) 
