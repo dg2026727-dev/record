@@ -31,10 +31,18 @@ while True:
     k = keysdown() 
     
     if 'up' in k:
-        airplane.pos.y += 0.1
+        airplane.pos.z -= 0.1
+        airplane.axis = vec(-1,0,0)
     if 'down' in k:
-        airplane.pos.y -= 0.1
+        airplane.pos.z += 0.1
+        airplane.axis = vec(1,0,0)
     if 'left' in k:
         airplane.pos.x -= 0.1
+        airplane.axis = vec(0,0,1)
     if 'right' in k:
         airplane.pos.x += 0.1
+        airplane.axis = vec(0,0,-1)
+    if 'q' in k:
+        airplane.pos.y += 0.1
+    if 'e' in k:
+        airplane.pos.y -= 0.1
